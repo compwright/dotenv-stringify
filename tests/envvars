@@ -1,0 +1,12 @@
+SIMPLE=simple
+SIMPLE_QUOTED='simple single-quoted'
+SIMPLE_DOUBLE_QUOTED="simple double-quoted"
+BOOLEAN_TRUE=true
+BOOLEAN_FALSE=false
+INT=1
+FLOAT=1.2
+EMPTY=
+EMPTY_QUOTED=''
+EMPTY_DOUBLE_QUOTED=""
+JSON={"a":"b", "c":"d"}
+MULTILINE="lorem ipsum\ndolor sit amet..."
