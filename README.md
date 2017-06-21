@@ -11,7 +11,7 @@ $ npm install dotenv-stringify
 
 ```js
 var fs = require('fs');
-var stringify = require('dotenv-stringify');
+const { stringify } = require('dotenv-stringify');
 var envstr = stringify(process.env);
 fs.writeFileSync('.env', envstr);
 ```
