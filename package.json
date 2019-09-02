@@ -1,6 +1,6 @@
 {
   "name": "dotenv-stringify",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Compose a envfile string from an object, per the motdotla/dotenv parser specifications",
   "main": "src/",
   "scripts": {
@@ -29,7 +29,9 @@
   },
   "homepage": "https://github.com/compwright/dotenv-stringify#readme",
   "babel": {
-    "presets": ["@babel/preset-env"]
+    "presets": [
+      "@babel/preset-env"
+    ]
   },
   "browserslist": "> 0.25%, not dead",
   "devDependencies": {
