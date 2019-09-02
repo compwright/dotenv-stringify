@@ -1,6 +1,4 @@
-var dotenv = require('dotenv');
-var stringify = require('../dist/stringify').default;
-
-dotenv.config();
+require('dotenv').config();
+const stringify = require('../dist/es5');
 
 console.log(stringify(process.env));
