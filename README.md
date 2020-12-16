@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/compwright/dotenv-stringify.png?branch=master)](https://travis-ci.org/compwright/dotenv-stringify)
 [![Dependency Status](https://img.shields.io/david/compwright/dotenv-stringify.svg?style=flat-square)](https://david-dm.org/compwright/dotenv-stringify)
 [![Download Status](https://img.shields.io/npm/dm/dotenv-stringify.svg?style=flat-square)](https://www.npmjs.com/package/dotenv-stringify)
+[![Sponsor on GitHub](https://img.shields.io/static/v1?label=Sponsor&message=❤&logo=GitHub&link=https://github.com/sponsors/compwright)](https://github.com/sponsors/compwright)
 
 Compose a envfile string from an object, per the [motdotla/dotenv](https://github.com/motdotla/dotenv/) parser specifications. Objects stringified using this package will be parsable by `dotenv.parse()`.
 
@@ -14,7 +15,7 @@ $ npm install dotenv-stringify
 
 ## Usage
 
-Node.js 8+:
+Node.js 10+:
 
 ```js
 const fs = require('fs');

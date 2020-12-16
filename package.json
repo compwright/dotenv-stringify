@@ -35,11 +35,11 @@
   },
   "browserslist": "> 0.25%, not dead",
   "devDependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.10.5",
-    "@babel/preset-env": "^7.10.4",
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
     "dotenv": "*",
-    "mocha": "^7.2.0",
-    "standard": "^14.3.4"
+    "mocha": "^8.2.1",
+    "standard": "^16.0.3"
   }
 }
