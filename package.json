@@ -1,6 +1,6 @@
 {
   "name": "dotenv-stringify",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Compose a envfile string from an object, per the motdotla/dotenv parser specifications",
   "main": "src/",
   "scripts": {
