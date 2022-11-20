@@ -2,13 +2,6 @@
   "name": "dotenv-stringify",
   "version": "2.0.7",
   "description": "Compose a envfile string from an object, per the motdotla/dotenv parser specifications",
-  "main": "src/",
-  "scripts": {
-    "build": "babel src/index.js -o dist/es5.js --source-maps",
-    "lint": "standard --fix src/*.js tests/*.js",
-    "pretest": "npm run lint && npm run build",
-    "test": "mocha tests/"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://compwright@github.com/compwright/dotenv-stringify.git"
@@ -28,18 +21,25 @@
     "url": "https://github.com/compwright/dotenv-stringify/issues"
   },
   "homepage": "https://github.com/compwright/dotenv-stringify#readme",
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
+  "type": "module",
+  "engines": {
+    "node": ">= 16"
   },
-  "browserslist": "> 0.25%, not dead",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
-    "@babel/cli": "^7.13.16",
-    "@babel/core": "^7.14.0",
-    "@babel/preset-env": "^7.14.1",
-    "dotenv": "*",
-    "mocha": "*",
-    "standard": "*"
+    "jest": "latest",
+    "standard": "latest",
+    "standard-version": "latest",
+    "unbuild": "latest"
   }
 }

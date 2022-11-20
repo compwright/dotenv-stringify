@@ -1,7 +1,6 @@
 # dotenv-stringify
 
-[![Build Status](https://travis-ci.org/compwright/dotenv-stringify.png?branch=master)](https://travis-ci.org/compwright/dotenv-stringify)
-[![Dependency Status](https://img.shields.io/david/compwright/dotenv-stringify.svg?style=flat-square)](https://david-dm.org/compwright/dotenv-stringify)
+[![Build Status](https://app.travis-ci.com/compwright/dotenv-stringify.svg?branch=master)](https://app.travis-ci.com/github/compwright/dotenv-stringify)
 [![Download Status](https://img.shields.io/npm/dm/dotenv-stringify.svg?style=flat-square)](https://www.npmjs.com/package/dotenv-stringify)
 [![Sponsor on GitHub](https://img.shields.io/static/v1?label=Sponsor&message=❤&logo=GitHub&link=https://github.com/sponsors/compwright)](https://github.com/sponsors/compwright)
 
@@ -15,21 +14,10 @@ $ npm install dotenv-stringify
 
 ## Usage
 
-Node.js 10+:
-
 ```js
-const fs = require('fs');
-const { stringify } = require('dotenv-stringify');
+import fs from 'fs'
+import stringify from 'dotenv-stringify'
 const envstr = stringify(process.env);
-fs.writeFileSync('.env', envstr);
-```
-
-In-browser or older Node.js environments:
-
-```js
-var fs = require('fs');
-var stringify = require('dotenv-stringify/dist/es5').stringify;
-var envstr = stringify(process.env);
 fs.writeFileSync('.env', envstr);
 ```
 
