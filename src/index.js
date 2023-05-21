@@ -5,8 +5,7 @@ function stringifyPair ([key, val]) {
   switch (typeof val) {
     case 'string':
       try {
-        JSON.parse(val)
-        strval = val
+        strval = JSON.stringify(JSON.parse(val), null, 0)
       } catch (e) {
         strval = quote.test(val) ? JSON.stringify(val) : val
       }
@@ -20,7 +19,7 @@ function stringifyPair ([key, val]) {
       break
     case 'object':
       if (val !== null) {
-        strval = JSON.stringify(val)
+        strval = JSON.stringify(val, null, 0)
       }
       break
   }

@@ -1,6 +1,6 @@
 {
   "name": "dotenv-stringify",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Compose a envfile string from an object, per the motdotla/dotenv parser specifications",
   "repository": {
     "type": "git",

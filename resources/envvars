@@ -8,5 +8,5 @@ FLOAT=1.2
 EMPTY=
 EMPTY_QUOTED=''
 EMPTY_DOUBLE_QUOTED=""
-JSON={"a":"b", "c":"d"}
+JSON={"a":"b","c":"d"}
 MULTILINE="lorem ipsum\ndolor sit amet..."
