@@ -1,4 +1,4 @@
-const quote = /[\s"']/
+const quote = /[\s"'#]/
 
 function stringifyPair ([key, val]) {
   let strval = ''

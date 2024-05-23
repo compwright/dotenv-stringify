@@ -3,8 +3,8 @@ import fs from 'fs'
 import dotenv from 'dotenv'
 import stringify from './index'
 
-const envStr = fs.readFileSync(path.resolve('./resources/envvars')).toString()
-const envStrNorm = fs.readFileSync(path.resolve('./resources/envvars-normalized')).toString()
+const envStr = fs.readFileSync(path.resolve('./resources/envvars')).toString().trim()
+const envStrNorm = fs.readFileSync(path.resolve('./resources/envvars-normalized')).toString().trim()
 const envObj = dotenv.parse(envStr)
 
 describe('stringify()', () => {
