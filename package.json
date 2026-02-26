@@ -37,6 +37,7 @@
     "dist"
   ],
   "devDependencies": {
+    "dotenv": "^17.3.1",
     "jest": "latest",
     "standard": "latest",
     "standard-version": "latest",
